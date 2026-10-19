@@ -150,7 +150,7 @@ function openCart(){$("dr").classList.add("show")}
 function closeCart(){$("dr").classList.remove("show")}
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const SHIP={std:["Livraison standard",5],pick:["Retrait en boutique",0]};
-const AIRTEL="+243 991 212 889 ";
+const AIRTEL="+243991212889";
 const PAY={airtel:["📱","Airtel Money","Payez par Airtel Money au numéro du shop"],cod:["💵","Paiement sur place","Vous payez en espèces au livreur à la réception de votre commande"]};
 let CO={ship:"std",pay:"airtel"};
 const sub=()=>cart.reduce((a,i)=>a+i.q*P.find(p=>p.id===i.id).p,0);
